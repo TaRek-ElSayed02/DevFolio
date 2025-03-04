@@ -1,0 +1,217 @@
+html {
+    background-color: #f5f5f5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+span {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.531), rgba(0, 0, 0, 0.531)), url(./assets/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-72 {
+    font-size: 72px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+.mr-70 {
+    margin-right: 70px;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+.nav1::before{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    transition: width 0.5s;
+}
+.nav1:hover::before{
+    width: 90%;
+}
+
+.home-parent{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+.h-child {
+    padding: 10px !important; /* Reduce padding inside child divs */
+}
+
+.h-child2 {
+    padding: 10px !important; /* Reduce padding */
+}
+
+.w-90{
+    width: 90%;
+}
+
+.h-child{
+    width: 46%!important;
+}
+
+.w-85{
+    width: 85%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.fs-17{
+    font-size: 17px;
+}
+
+.progress {
+    height: 12px!important; /* Adjust height as needed */
+    border-radius: 0 !important; /* Remove rounded corners */
+}
+
+.progress-bar {
+    border-radius: 0!important; /* Ensure inner bar has no rounded corners */
+}
+.h-child2{
+    position: relative;
+    width: 47%!important;
+}
+.h-child2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width:17%;
+    height: 3px;
+    background-color: blue;
+    bottom:85%;
+}
+
+/*services*/
+
+.services{
+    background-color: #F5F5F5;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.blue-line{
+    width: 3%;
+    height: 5px;
+    background-color: #0078FF;
+}
+.card-body i{
+    font-size: 40px;
+    margin: 10px 0px;
+    border-radius: 50%;
+    border: #0078FF solid 8px;
+    width: 120px;
+    height: 120px;
+    line-height: 2.5;
+    transition: all 0.6s;
+}
+.card-body:hover i{
+    background-color: #0078FF;
+    color: #ffffff;
+    border-color: #CDE1F8 !important;
+}
+
+.icon-circle{
+    width: 160px;
+    height: 70px;
+    border-radius: 50%;
+    /* background-color: #0078FF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*services*/
+
+/*blue section*/
+.blue-section{
+    background:linear-gradient(rgba(0, 119, 255, 0.778) ,rgba(0, 119, 255, 0.778)), url(./assets/counters-bg.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+.blue-i {
+    width: 80px; 
+    height: 80px; /* Ensure width and height are equal */
+    font-size: 30px;
+    margin: 10px auto; /* Center the icons */
+    border-radius: 50%;
+    border: #CDE1F8 solid 10px;
+    color: #CDE1F8;
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+/*blue section*/
+
+
+@media screen and (max-width: 500px) {
+    .home-cont h1{
+        font-size: 50px!important;
+    }
+    
+    .navbar-brand1{
+        margin: 0;
+ 
+    }
+
+    .h-child{
+        width: 100%!important;
+    }
+
+}
+
