@@ -98,12 +98,20 @@ span {
     width: 85%;
 }
 
+.w-70{
+    width: 70%;
+}
+
 .w-80{
     width: 80%;
 }
 
 .fs-17{
     font-size: 17px;
+}
+
+.fs-12{
+    font-size: 12.8px;
 }
 
 .progress {
@@ -118,6 +126,12 @@ span {
     position: relative;
     width: 47%!important;
 }
+.about,.services,.work{
+    background-color: #F5F5F5;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
 .h-child2::before{
     content: "";
     display: block;
@@ -130,11 +144,7 @@ span {
 
 /*services*/
 
-.services{
-    background-color: #F5F5F5;
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
+
 .blue-line{
     width: 3%;
     height: 5px;
@@ -199,6 +209,134 @@ span {
 /*blue section*/
 
 
+/*work section */
+
+.uniqueicon{
+    color: blue;
+}
+
+ .uniqueicon:hover ,.card-body:hover .uniqueicon{
+    background-color: white !important;
+    color: blue!important;
+    border:none !important;
+}
+/*work section */
+
+
+/*blue section 2*/
+.blue-section-two{
+    background:linear-gradient(rgba(0, 119, 255, 0.778) ,rgba(0, 119, 255, 0.778)), url(./assets/overlay-bg.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 120px 0px;
+}
+.carousel-item img{
+    width: 11.5% !important;
+    border-radius: 50% !important;
+}
+.edit-but button{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+/*blue section 2*/
+
+.blog{
+    background-color: #F5F5F5;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.blue-square{
+    background-color:#0078FF;
+    color: white;
+    font-size: 12px;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    top: 0 !important;
+    left: 50% !important;
+}
+.b2{
+    width: 30%;
+}
+.card-footer a{
+    transition: color 0.3s;
+}
+.card-footer a:hover{
+    color: #0078FF !important;
+}
+/*blue section 2*/
+
+
+/*-----------------------------------------------------------------*/
+/*Section Eight*/
+.contact{
+    background:linear-gradient(rgba(0, 119, 255, 0.778) ,rgba(0, 119, 255, 0.778)), url(./assets/overlay-bg.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 45px 0px 10px 0px;
+    box-shadow: 0px 10px 10px #000000db;
+}
+.contact-parent{
+    margin-top: 45px;
+    margin-bottom: 50px;
+    padding: 40px 40px;
+}
+.contact-parent h5{
+    position: relative;
+}
+.contact-parent h5::after{
+    content:"";
+    width: 20%;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.co-ico {
+    padding-left: 12px;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0078FF;
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+
+.co-ico:hover{
+    background-color: #0078FF;
+    color: #ffffff;
+    border-color: #CDE1F8 !important;
+}
+.bt-end {
+    border: none;
+}
+.bt-end:hover{
+    outline: 5px solid #CDE1F8;
+    background-color: #3393FF;
+}
+
+.form-control {
+    border-radius: 0!important;
+}
+/*-----------------------------------------------------------------*/
+
+.footer{
+    padding: 30px 0px 10px 0px;
+    background-color: #0062d3f8;
+}
+
+/*end*/
+
+
+
 @media screen and (max-width: 500px) {
     .home-cont h1{
         font-size: 50px!important;
@@ -212,6 +350,15 @@ span {
     .h-child{
         width: 100%!important;
     }
-
+    
 }
 
+@media screen and (max-width: 321px) {
+    .co-ico{
+        width: 40px;
+        height: 40px;
+        padding-left: 8px;
+        padding-top: 5px;
+    }
+    
+}
