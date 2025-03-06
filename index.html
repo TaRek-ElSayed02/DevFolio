@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div class=" home">
-        <nav class="navbar navbar-expand-lg navbar-light  bg-opacity-25 ">
+    <div class=" home" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-opacity-25 fixed-top" id="navbar">
             <div class="container-fluid">
                 <!-- Navbar Brand (Left Side) -->
                 <a class="navbar-brand1 -0 ml-100 text-white fw-600 fs-28 text-decoration-none " href="#">DevFolio</a>
@@ -36,18 +36,18 @@
                             <a class="nav-link active text-white nav1 position-relative" href="#">HOME</a>
                         </li>
                         <li class="nav-item  me-3">
-                            <a class="nav-link text-white nav1 position-relative" href="#">ABOUT</a>
+                            <a class="nav-link text-white nav1 position-relative" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item  me-3">
-                            <a class="nav-link text-white nav1 position-relative" href="#">SERVICES</a>
+                            <a class="nav-link text-white nav1 position-relative" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item  me-3">
-                            <a class="nav-link text-white nav1 position-relative" href="#">WORK</a>
+                            <a class="nav-link text-white nav1 position-relative" href="#work">WORK</a>
                         </li>
                         <li class="nav-item  me-3">
-                            <a class="nav-link text-white nav1 position-relative" href="#">BLOG</a>
+                            <a class="nav-link text-white nav1 position-relative" href="#blog">BLOG</a>
                         </li>
-                        <li class="nav-item  dropdown me-3">
+                        <li class="nav-item dropdown me-3">
                             <a class="nav-link nav1 position-relative dropdown-toggle text-white" href="#"
                                 id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -55,24 +55,37 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">DropDown 1</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">DropDown 2</a></li>
+
+                                <!-- First Level Submenu -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">DropDown 2</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Sub DropDown 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Sub DropDown 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Sub DropDown 4</a></li>
+                                    </ul>
+                                </li>
+
                                 <li><a class="dropdown-item" href="#">DropDown 3</a></li>
                                 <li><a class="dropdown-item" href="#">DropDown 4</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item  me-3">
-                            <a class="nav-link text-white fw-bold nav1 position-relative" href="#">CONTACT </a>
+                            <a class="nav-link text-white fw-bold nav1 position-relative" href="#contact">CONTACT </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+
         <div class="home-cont text-center ">
             <div class="container d-flex flex-column align-items-center justify-content-center vh-75">
-                <h1 class="text-white fs-72">I am Morgan Freeman</h1>
-                <p class="text-white fs-1">|</p>
+                <h1 class="text-white fs-72 mt-17">I am Morgan Freeman</h1>
+                <p class="text-white fs-1">
+                    <span id="typed" class="fw-600 mt-3">|</span>
+                </p>
             </div>
         </div>
 
@@ -86,7 +99,8 @@
                 <div class="h-child pt-2 col-6 col-12 col-md-12">
                     <div
                         class=" ps-2 row-gap-3 d-flex flex-row justify-content-between w-80 align-items-center flex-wrap gap-2">
-                        <div><img class="rounded me-5" src="./assets/testimonial-2.jpg" /></div>
+                        <div><img class="rounded me-5" src="./assets/testimonial-2.jpg" alt="Morgan Freeman Photo" />
+                        </div>
                         <div class="text-start">
                             <p><b class="fw-600 fs-17">Name: </b><span class="fw-400 text-dark-emphasis">Morgan
                                     Freeman</span></p>
@@ -260,7 +274,7 @@
     </div>
 
 
-    <div class="work">
+    <div class="work" id="work">
         <div class="container">
             <h3 class="text-center fw-bold mt-5" style="font-size: 48px;">PORTOFOLIO</h3>
             <p class="text-center fw-light text-dark-emphasis">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -268,8 +282,10 @@
             <div class="blue-line m-auto mb-5"></div>
             <div class="row g-4 justify-content-center">
                 <div class="col-12 col-md-6 col-sm-12 col-lg-4">
-                    <div class="card m-0 h-100 border-0 shadow-sm">
-                        <img src="./assets/work-1.jpg" class="card-img-top" alt="...">
+                    <div class="card card-work m-0 h-100 border-0 shadow-sm">
+                        <div>
+                            <img src="./assets/work-1.jpg" class="card-img-top" alt="tablet with mug on table">
+                        </div>
                         <div class="card-body p-0 d-flex m-0 px-3 mt-3 justify-content-between">
                             <div class="mt-3">
                                 <h5 class="card-title">Lorem ipsum dolor</h5>
@@ -283,8 +299,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-12 col-lg-4">
-                    <div class="card m-0 h-100 border-0 shadow-sm">
-                        <img src="./assets/work-2.jpg" class="card-img-top" alt="...">
+                    <div class="card card-work m-0 h-100 border-0 shadow-sm">
+                        <div>
+                            <img src="./assets/work-2.jpg" class="card-img-top"
+                                alt="chair & table with tablue with white hall">
+                        </div>
                         <div class="card-body p-0 d-flex m-0 px-3 mt-3 justify-content-between">
                             <div class="mt-3">
                                 <h5 class="card-title">Loreda Cuno Nere</h5>
@@ -298,8 +317,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-12 col-lg-4">
-                    <div class="card m-0 h-100 border-0 shadow-sm">
-                        <img src="./assets/work-3.jpg" class="card-img-top" alt="...">
+                    <div class="card card-work m-0 h-100 border-0 shadow-sm">
+                        <div>
+                            <img src="./assets/work-3.jpg" class="card-img-top"
+                                alt="seems hand of businessman looking to time on watch on his hand">
+                        </div>
                         <div class="card-body p-0 d-flex m-0 px-3 mt-3 justify-content-between">
                             <div class="mt-3">
                                 <h5 class="card-title">Mavrito Lana Dere</h5>
@@ -313,8 +335,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-12 col-lg-4">
-                    <div class="card m-0 h-100 border-0 shadow-sm">
-                        <img src="./assets/work-4.jpg" class="card-img-top" alt="...">
+                    <div class="card card-work m-0 h-100 border-0 shadow-sm">
+                        <div><img src="./assets/work-4.jpg" class="card-img-top" alt="laptop bag on table"></div>
                         <div class="card-body p-0 d-flex m-0 px-3 mt-3 justify-content-between">
                             <div class="mt-3">
                                 <h5 class="card-title">Bindo Laro Cado</h5>
@@ -328,8 +350,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-12 col-lg-4">
-                    <div class="card m-0 h-100 border-0 shadow-sm">
-                        <img src="./assets/work-5.jpg" class="card-img-top" alt="...">
+                    <div class="card card-work m-0 h-100 border-0 shadow-sm">
+                        <div> <img src="./assets/work-5.jpg" class="card-img-top"
+                                alt="laptop sessiors and some other tools uder in sawing"></div>
                         <div class="card-body p-0 d-flex m-0 px-3 mt-3 justify-content-between">
                             <div class="mt-3">
                                 <h5 class="card-title">Studio Lena Mado</h5>
@@ -343,8 +366,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-12 col-lg-4">
-                    <div class="card m-0 h-100 border-0 shadow-sm">
-                        <img src="./assets/work-6.jpg" class="card-img-top" alt="...">
+                    <div class="card card-work m-0 h-100 border-0 shadow-sm">
+                        <div><img src="./assets/work-6.jpg" class="card-img-top" alt="some books with laptop on table ">
+                        </div>
                         <div class="card-body p-0 d-flex m-0 mt-3 px-3 justify-content-between">
                             <div class="mt-3">
                                 <h5 class="card-title">Studio Big Bang</h5>
@@ -372,7 +396,7 @@
                 <div class="carousel-inner">
 
                     <div class="carousel-item active pb-5 text-center text-white" data-bs-interval="2000">
-                        <img src="./assets/testimonial-2.jpg" class="mb-3" alt="...">
+                        <img src="./assets/testimonial-2.jpg" class="mb-3" alt="Morgan Freeman photo ">
                         <h3 class="fw-semibold fs-4 mb-3">XAVI ALONSO</h3>
                         <p class="fs-5 w-70 mb-4 fw-light text-center m-auto">Curabitur arcu erat, accumsan id imperdiet
                             et, porttitor at sem. Lorem ipsum dolor sit amet,
@@ -407,7 +431,8 @@
 
                 <div class="col">
                     <div class="card h-100">
-                        <img src="./assets/post-1.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/post-1.jpg" class="card-img-top imgBlog"
+                            alt="two friends sitting on car on air ">
                         <div class="card-body position-relative">
                             <h5 class="card-title mt-3">See more ideas about Travel</h5>
                             <p class="card-text text-dark-emphasis">Proin eget tortor risus. Pellentesque in ipsum id
@@ -416,7 +441,8 @@
                             <h6 class="blue-square translate-middle">TRAVEL</h6>
                         </div>
                         <div class="card-footer">
-                            <img src="./assets/testimonial-2.jpg" style="width: 10%; border-radius: 50%;" />
+                            <img src="./assets/testimonial-2.jpg" style="width: 10%; border-radius: 50%;"
+                                alt="Morgan Freeman Photo" />
                             <a href="" class="text-dark text-decoration-none me-5">Morgan Freeman</a>
                             <span class="text-dark-emphasis ms-5"><i class="fa-regular fa-clock"></i> 10 min</span>
                         </div>
@@ -425,7 +451,7 @@
 
                 <div class="col">
                     <div class="card h-100">
-                        <img src="./assets/post-2.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/post-2.jpg" class="card-img-top imgBlog" alt="seems image for healthy food ">
                         <div class="card-body position-relative">
                             <h5 class="card-title mt-3">See more ideas about Travel</h5>
                             <p class="card-text text-dark-emphasis">Proin eget tortor risus. Pellentesque in ipsum id
@@ -434,7 +460,8 @@
                             <h6 class="blue-square b2 translate-middle">WEB DESIGN</h6>
                         </div>
                         <div class="card-footer">
-                            <img src="./assets/testimonial-2.jpg" style="width: 10%; border-radius: 50%;" />
+                            <img src="./assets/testimonial-2.jpg" style="width: 10%; border-radius: 50%;"
+                                alt="Morgan Freeman Photo" />
                             <a href="" class="text-dark text-decoration-none me-5">Morgan Freeman</a>
                             <span class="text-dark-emphasis ms-5"><i class="fa-regular fa-clock"></i> 10 min</span>
                         </div>
@@ -443,7 +470,8 @@
 
                 <div class="col">
                     <div class="card h-100">
-                        <img src="./assets/post-3.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/post-3.jpg" class="card-img-top imgBlog"
+                            alt="office containing devidces and person that work in">
                         <div class="card-body position-relative">
                             <h5 class="card-title mt-3">See more ideas about Travel</h5>
                             <p class="card-text text-dark-emphasis">Proin eget tortor risus. Pellentesque in ipsum id
@@ -452,7 +480,8 @@
                             <h6 class="blue-square b2 translate-middle">WEB DESIGN</h6>
                         </div>
                         <div class="card-footer">
-                            <img src="./assets/testimonial-2.jpg" style="width: 10%; border-radius: 50%;" />
+                            <img src="./assets/testimonial-2.jpg" style="width: 10%; border-radius: 50%;"
+                                alt="Morgan Freeman Photo" />
                             <a href="" class="text-dark text-decoration-none me-5">Morgan Freeman</a>
                             <span class="text-dark-emphasis ms-5"><i class="fa-regular fa-clock"></i> 10 min</span>
                         </div>
@@ -527,15 +556,42 @@
 
     <div class="footer text-white fs-6">
         <div class="text-center mb-0">
-          <p class="mb-1">© Copyright <b>DevFolio</b>. All Rights Reserved</p>
-          <p>Designed by <a class="text-decoration-none text-white" href="#home">BootstrapMade</a></p>
+            <p class="mb-1">© Copyright <b>DevFolio</b>. All Rights Reserved</p>
+            <p>Designed by <a class="text-decoration-none text-white" href="#home">BootstrapMade</a></p>
         </div>
-      </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var typed = new Typed('#typed', {
+                strings: ["", "Developer", "Photographer", "Freelancer", "Designer"],
+                typeSpeed: 80,
+                backSpeed: 70,
+                loop: true
+            });
+        });
+
+        //navbar change color with opacity 
+
+        let navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 0) {
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+                navbar.style.paddingBlock="0px";
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+            }
+        });
+
+
+    </script>
 </body>
 
 </html>

@@ -49,6 +49,10 @@ span {
     margin-right: 70px;
 }
 
+.mt-17 {
+    margin-top: 170px;
+}
+
 .vh-75 {
     height: 75vh;
 }
@@ -76,6 +80,23 @@ span {
     justify-content: center;
     justify-content: space-evenly;
 }
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
 
 
 .h-child {
@@ -221,7 +242,23 @@ span {
     border:none !important;
 }
 /*work section */
+.card-work {
+    overflow: hidden; /* Prevents overflow */
+    display: flex;
+}
 
+.card-work div:first-child {  
+    overflow: hidden; 
+}
+
+.card-work img {
+    transition: transform 0.8s ease;
+    object-fit: cover;
+}
+
+.card-work:hover img {
+    transform: scale(1.25);
+}
 
 /*blue section 2*/
 .blue-section-two{
@@ -243,6 +280,7 @@ span {
 }
 /*blue section 2*/
 
+
 .blog{
     background-color: #F5F5F5;
     padding-top: 30px;
@@ -260,14 +298,24 @@ span {
     top: 0 !important;
     left: 50% !important;
 }
+
+.imgBlog:hover{
+    cursor: pointer;
+}
+
 .b2{
     width: 30%;
 }
 .card-footer a{
     transition: color 0.3s;
 }
-.card-footer a:hover{
+.card-footer img:hover~a{
     color: #0078FF !important;
+
+}
+
+.card-footer img:hover{
+    cursor: pointer;
 }
 /*blue section 2*/
 
@@ -314,6 +362,7 @@ span {
     background-color: #0078FF;
     color: #ffffff;
     border-color: #CDE1F8 !important;
+    cursor: pointer;
 }
 .bt-end {
     border: none;
@@ -321,6 +370,7 @@ span {
 .bt-end:hover{
     outline: 5px solid #CDE1F8;
     background-color: #3393FF;
+    cursor: pointer;
 }
 
 .form-control {
